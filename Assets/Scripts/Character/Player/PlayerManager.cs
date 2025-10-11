@@ -1,16 +1,21 @@
 using UnityEngine;
 
-public class PlayerManager : MonoBehaviour
+public class PlayerManager : CharacterManager
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [Header("Manager Scripts")]
+    [HideInInspector] public PlayerLocomotionManager playerLocomotionManager;
+
+    protected override void Awake()
     {
-        
+        base.Awake();
+
+        playerLocomotionManager = GetComponent<PlayerLocomotionManager>();
     }
 
-    // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
-        
+        base.Update();
+
+        playerLocomotionManager.HandleAllMovement();
     }
 }

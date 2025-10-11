@@ -1,9 +1,15 @@
+using Unity.Netcode;
 using UnityEngine;
 
-public class CharacterManager : MonoBehaviour
+public class CharacterManager : NetworkBehaviour
 {
-    private void Start()
+    protected virtual void Awake()
     {
         DontDestroyOnLoad(gameObject);
+    }
+
+    protected virtual void Update()
+    {
+
     }
 }
