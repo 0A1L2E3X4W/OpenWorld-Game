@@ -4,15 +4,15 @@ using UnityEngine.SceneManagement;
 
 public class WorldSaveGameManger : MonoBehaviour
 {
-    public static WorldSaveGameManger instance;
+    public static WorldSaveGameManger Instance;
 
     [Header("World Index")]
     [SerializeField] private int worldIndex = 1;
 
     private void Awake()
     {
-        if (instance != null) { Destroy(gameObject); }
-        else { instance = this; }
+        if (Instance != null) { Destroy(gameObject); }
+        else { Instance = this; }
     }
 
     private void Start()

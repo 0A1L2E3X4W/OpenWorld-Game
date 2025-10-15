@@ -3,14 +3,14 @@ using UnityEngine;
 
 public class PlayerUIManager : MonoBehaviour
 {
-    public static PlayerUIManager instance;
+    public static PlayerUIManager Instance;
 
     [Header("Network Join")]
     [SerializeField] private bool joinGameAsClient;
 
     private void Awake()
     {
-        if (instance == null) { instance = this; }
+        if (Instance == null) { Instance = this; }
         else { Destroy(gameObject); }
     }
 
