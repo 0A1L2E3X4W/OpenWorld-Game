@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 3626295134867087363}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 1, z: -3.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -182,7 +182,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85c507168a5f6b64c8788ca5d5a1750f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   cameraObj: {fileID: 1731995669816723736}
+  cameraPivotTransform: {fileID: 4991982123479868367}
+  horizontalRotateSpeed: 220
+  verticalRotateSpeed: 180
+  minPivot: -30
+  maxPivot: 30
+  cameraCollisionRadius: 0.2
+  collideWithLayers:
+    serializedVersion: 2
+    m_Bits: 1
+  cameraSmoothSpeed: 1.2
+  horizontalLookAngle: 0
+  verticalLookAngle: 0
 --- !u!1 &6467198205234035062
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,7 +221,7 @@ Transform:
   m_GameObject: {fileID: 6467198205234035062}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
